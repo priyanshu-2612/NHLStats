@@ -24,7 +24,7 @@ public class App implements ActionListener{
 
     //Part of the teams page
     JButton teamButton, moreStatsButton;
-    JButton betButtonW = new JButton("W");
+    JButton betButtonW = new JButton("WIN");
     JButton betButtonL = new JButton("L");
     JButton[] teamButtons = new JButton[TEAM_AMOUNT];
     JTextArea[] infoArray = new JTextArea[TEAM_AMOUNT];
