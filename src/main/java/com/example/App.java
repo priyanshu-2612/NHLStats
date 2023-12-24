@@ -288,12 +288,13 @@ public class App implements ActionListener{
     public void actionPerformed(ActionEvent e) {
 
         if(e.getSource() == betButtonW){
-            Betting.addBet("W", teams[currentSelectedTeamIndex].ab, "10");
             JFrame betconfirmed = new JFrame();
             betconfirmed.setSize(420,420);
             betconfirmed.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             betconfirmed.setVisible(true);
             System.out.println("YO");
+            Betting.addBet("W", teams[currentSelectedTeamIndex].ab, "10");
+           
         }
 
         if(e.getSource() == betButtonL){
