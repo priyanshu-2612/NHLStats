@@ -9,12 +9,30 @@ import java.net.URISyntaxException;
 import java.time.LocalDate;
 import java.util.Scanner;
 
+import javax.swing.JFrame;
+
+import javafx.scene.paint.Color;
+
 class Betting {
 
     static final int TEAM_AMOUNT = 32;
     // I hope that the teams are populated at this point
     static Team[] teams = DataFetcher.getTeams();
     static int checkedBetWon;
+
+    public static void confirmBet(){
+
+        JFrame frame = new JFrame("NHL Stats");
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.setSize(650, 850);
+        frame.setLayout(null);
+        frame.setResizable(false);
+        frame.setAutoRequestFocus(true);
+
+        // No idea what these do
+        frame.getContentPane().setFocusable(true);
+        frame.getContentPane().setFocusTraversalKeysEnabled(false);
+    }
 
     /** Part of the betting game, rewrites the bet.txt file */ 
     public static void addBet(String winOrLoss, String teamAb, String amount){

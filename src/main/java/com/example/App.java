@@ -289,6 +289,7 @@ public class App implements ActionListener{
 
         if(e.getSource() == betButtonW){
             Betting.addBet("W", teams[currentSelectedTeamIndex].ab, "10");
+            Betting.confirmBet();
         }
 
         if(e.getSource() == betButtonL){
