@@ -36,6 +36,8 @@ class Betting {
             TLog.error("Problem writing to the bet file");
             e.printStackTrace();
         }
+
+        
     }
 
     /** Part of the betting game, checks the bet.txt file and updates the points accordingly */
